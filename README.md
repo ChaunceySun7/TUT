@@ -42,4 +42,26 @@
   | Gaussian Mixture(full)  | 0.529 |  0.482  |   0.582  |
   
   
+  ### 实验结论
+    从以上的实验结果可以看出来，其中 Agglomerative Clustering (Ward)算法的综合结果最好，NMI的分数最高，
+    
+    同时完整性的结果也最高。
+    
+    DBSCAN算法的同质性分数最高，K-means算法、AffinityPropagation算法、Gaussian Mixture算法的结果比较适中
+    
+    其中Gaussian Mixture中tied方法的综合结果最好。
+    
+    当时有几个算法运行的结果分数很低，不知是算法的问题还是数据加载的问题，比如 Mean-Shift算法、
+    
+    Spectral Clustering等三个分数都很低。
+    
+    综上来看，Agglomerative Clustering (Ward)算法、K-means算法、AffinityPropagation算法
+    
+    以及Gaussian Mixture算法在第一个数据集的运行结果都不错。
+    
+    
+    
+    
+  
+  
   
