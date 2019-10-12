@@ -1,2 +1,4 @@
 # TUT
-Homework of DM 
+## Homework1 of DM 
+### 1.MNIST数据集
+
