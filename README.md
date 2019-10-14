@@ -86,21 +86,37 @@
 
   |  算法   |  NMI  |  Homogeneity |  Completeness |
   |  ----   | ----  |   ----       |    -----      |
-  | K-means  | 0.698 |  0.679  | 0.718 |
-  | AffinityPropagation  | 0.655 |  0.932  |  0.460 |
-  | Mean-Shift  | 0.048 |  0.009  |  0.257  |
-  | Spectral Clustering  | 0.043 |  0.007  |  0.254  |
-  | Agglomerative Clustering (Ward) | 0.800 |    0.758    |  0.836 |
-  | Agglomerative Clustering (average)  | 0.041|  0.007 |  0.238  |
-  | Agglomerative Clustering (complete)  | 0.065 |  0.017  |   0.250  |
-  | Agglomerative Clustering (single)  | 0.040 |  0.006  |   0.276  |
-  | DBSCAN  | 0.554 |  1.000  |   0.307  |
-  | Gaussian Mixture(spherical)  | 0.662 |  0.645  |   0.679  |
-  | Gaussian Mixture(diag)  | 0.620 |  0.560  |   0.685  |
-  | Gaussian Mixture(tied)  | 0.710 |  0.673  |   0.750  |
-  | Gaussian Mixture(full)  | 0.529 |  0.482  |   0.582  |
+  | K-means  | 0.485 |  0.446  | 0.527 |
+  | AffinityPropagation  | 0.411 |  0.885  |  0.191 |
+  | Mean-Shift  | 0.0 |  0.0  |  1.0  |
+  | Spectral Clustering  | 0.244 |  0.180  |  0.330  |
+  | Agglomerative Clustering (Ward) | 0.624 |    0.595    |  0.654 |
+  | Agglomerative Clustering (average)  | 0.613|  0.603 |  0.623  |
+  | Agglomerative Clustering (complete)  | 0.573 |  0.541  |   0.607  |
+  | Agglomerative Clustering (single)  | 0.012 |  0.001  |   0.141  |
+  | DBSCAN  | 0.411 |  1.000  |   0.169  |
+  | Gaussian Mixture(spherical)  | 0.456 |  0.409  |   0.508  |
+  | Gaussian Mixture(diag)  | 0.622 |  0.587  |   0.659  |
+  | Gaussian Mixture(tied)  | 0.562 |  0.535  |   0.591  |
+  | Gaussian Mixture(full)  | 0.508 |  0.476  |   0.542  |
   
 ### 实验结论
-
+    从以上的实验结果可以看出来，其中Agglomerative Clustering (Ward)算法的综合结果来看最好，效果最显著，NMI分数最高。
+    
+    DBSCAN算法的同质性分数最高，Gaussian Mixture(diag)算法的完整性分数最高。
+    
+    K-means算法、AffinityPropagation算法结果比较适中
+    
+    Agglomerative Clustering算法中除了single方法之外，其他三个方法的结果综合来看都不错，其中Ward方法是其中结果最好的
+    
+    Gaussian Mixture算法中四个方法结果都不错，其中diag方法综合来看是四个中最优的
+    
+    当时有几个算法运行的结果分数很低，不知是算法的问题还是数据加载的问题，比如 Mean-Shift算法、
+    
+    Agglomerative Clustering (single）算法、Spectral Clustering算法 等三个分数都很低。
+    
+    综上来看，Agglomerative Clustering 算法除掉 Agglomerative Clustering (single)、K-means算法、AffinityPropagation算法
+    
+    以及Gaussian Mixture算法在第二个数据集的运行结果都不错。
   
   
