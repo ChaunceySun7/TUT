@@ -101,13 +101,15 @@
   | Gaussian Mixture(full)  | 0.508 |  0.476  |   0.542  |
   
 ### 实验结论
-    从以上的实验结果可以看出来，其中Agglomerative Clustering (Ward)算法的综合结果来看最好，效果最显著，NMI分数最高。
+    从以上的实验结果可以看出来，其中Agglomerative Clustering (Ward)算法的综合结果来看最好，NMI分数最高。
     
     DBSCAN算法的同质性分数最高，Gaussian Mixture(diag)算法的完整性分数最高。
     
     K-means算法、AffinityPropagation算法结果比较适中
     
-    Agglomerative Clustering算法中除了single方法之外，其他三个方法的结果综合来看都不错，其中Ward方法是其中结果最好的
+    Agglomerative Clustering算法中除了single方法之外，其他三个方法的结果综合来看都不错，
+    
+    其中Ward方法是其中结果最好的
     
     Gaussian Mixture算法中四个方法结果都不错，其中diag方法综合来看是四个中最优的
     
@@ -115,7 +117,9 @@
     
     Agglomerative Clustering (single）算法、Spectral Clustering算法 等三个分数都很低。
     
-    综上来看，Agglomerative Clustering 算法除掉 Agglomerative Clustering (single)、K-means算法、AffinityPropagation算法
+    综上来看，Agglomerative Clustering 算法除掉 Agglomerative Clustering (single)、K-means算法
+    
+    、AffinityPropagation算法
     
     以及Gaussian Mixture算法在第二个数据集的运行结果都不错。
   
