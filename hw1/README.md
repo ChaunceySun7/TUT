@@ -67,7 +67,9 @@
    
    categories = ['alt.atheism','talk.religion.misc','comp.graphics','sci.space']
    
-   documents : 3387
+   n_samples : 3387
+  
+   n_features :10000
 ### 性能评价指标
 #### Normalized Mutual Information (NMI) 归一化互信息
   metrics.normalized_mutual_info_score(labels_true, labels_pred)
